@@ -214,11 +214,32 @@ a {
 }
 
 @media (max-width: 700px) {
-	.chat-main {
-		display: block;
+	body {
+	  font-size: 14px;
 	}
-
+  
+	.chat-container {
+	  margin: 10px;
+	}
+  
+	.chat-header {
+	  padding: 10px;
+	}
+  
 	.chat-sidebar {
-		display: none;
+	  padding: 10px;
+	}
+  
+	.chat-messages .message {
+	  max-width: 80%;
+	}
+  
+	.chat-form-container {
+	  padding: 10px;
+	}
+  
+	.chat-form-container input[type='text'] {
+	  height: 30px;
+	  font-size: 14px;
 	}
 }
