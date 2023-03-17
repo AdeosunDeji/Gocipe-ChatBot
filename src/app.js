@@ -3,8 +3,9 @@ import path from "path";
 import session from "express-session";
 import http from "http";
 import socketio from "socket.io";
-import { formatMessage } from "./utils/messages";
+
 import { userJoin, getCurrentUser } from "./utils/users";
+import { formatMessage } from "./utils/messages";
 
 
 const app = express();
