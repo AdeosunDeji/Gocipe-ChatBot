@@ -91,7 +91,7 @@ chatForm.addEventListener("submit", (e) => {
     socket.emit("chatMessage", msg);
     setTimeout(() => {
       if (orderList.length === 0 ) {
-        outputMessage({ username: botName, time: `${formatTime(new Date())}`, text: "<strong>Your cart is empty. Select 1 to place an order.</strong>"});
+        outputMessage({ username: botName, time: `${formatTime(new Date())}`, text: "<strong>Your cart is empty.. Select 1 to place an order.</strong>"});
       } else {
         const orderListString = orderList.map(order => `${order.itemName} - ${order.price}`).join("<br>");
         outputMessage({ username: botName, time: `${formatTime(new Date())}`, text: `Your order list: <br> ${JSON.stringify(orderListString)}. <br> <strong>Reply with 99 to checkout or Select 1 to place an order.</strong>`});
