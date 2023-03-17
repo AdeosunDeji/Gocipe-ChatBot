@@ -1,4 +1,4 @@
-Project Name
+"Go'cipe"
 This project is called "Go'cipe chatbot".
 
 Description
